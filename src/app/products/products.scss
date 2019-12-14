@@ -1,0 +1,161 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-size: 100%;
+    height: 100%;
+    background: #ffc7e8;
+}
+
+input, button {
+    outline: none;
+    border: none;
+}
+
+.cont {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+
+    &::-webkit-scrollbar {
+        width: 7px;
+        height: 7px;
+    }
+
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px #ffffff; 
+        border-radius: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #ffffff; 
+        border-radius: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #cccccc; 
+    }
+
+    .total{
+        color: #777777;
+        padding: 0 20px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .send, .cancel{
+            border-radius: 35px;
+            padding: 8px 20px;
+            cursor: pointer;
+        }
+
+        .send{
+            background: #6ED3CF;
+            color: white;
+        }
+
+        .cancel{
+            background: rgba(110, 211, 207, 0.3);
+            color: #6ED3CF;
+        }
+    }
+}
+
+.tablecontainer{
+    padding: 20px 0 10px 0;
+    margin: 0 20px 20px 20px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+
+    table{
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 13px;
+        color: #777777;
+
+        tr, th{
+            padding: 5px 0;
+        }
+    }
+}
+
+thead{
+    tr th{
+        font-weight: 300;
+        color: #6ED3CF;
+    }
+}
+
+thead, tbody{
+    tr {
+        td, th{
+            text-align: center;
+        }
+    }
+}
+
+tbody{
+
+    tr:nth-child(odd){
+        background: rgba(255, 199, 232, 0.2);
+    }
+
+    .img{
+        width: 70px;
+        padding-left: 20px;
+        box-sizing: border-box;
+
+        & > div {
+            margin: 2px auto;
+            width: 50px;
+            height: 50px;
+            box-sizing: border-box;
+            background: #ffc7e8;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 100%;
+                height: 100%;
+                background: #cccccc;
+                box-sizing: border-box;
+                clip-path: circle(24px at center center);
+            }
+        }
+    }
+
+    button{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        border-radius: 50%;
+        font-size: 12px;
+    }
+
+    .added{
+        font-weight: bolder;
+        color: #2c662d;
+    }
+
+    .add{
+        color: #008000;
+        background: rgba(0, 128, 0, 0.1);
+    }
+
+    .remove{
+        color: #c62828;
+        background: rgba(198, 40, 40, 0.1);
+    }
+}

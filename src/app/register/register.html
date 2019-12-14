@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./register.css">
+    <link rel="stylesheet" href="./shared.css">
+    <title> Cadastro </title>
+</head>
+
+<body>
+
+    <div class="cont">
+        <div class="register">
+            <div class="main">
+                <div class="logo"> web </div>
+                <input type="text" class="input" name="username" placeholder="Usuário*" />
+                <input type="password" class="input" name="pass" placeholder="Senha*" />
+                <input type="password" class="input" name="confirm" placeholder="Confirmar senha*" />
+            </div>
+            <div class="personal">
+                <h3> Dados pessoais: </h3>
+                <div class="form">
+                    <input type="text" class="input" name="name" placeholder="Nome*" />
+                    <input type="text" class="input" name="age" placeholder="Data de nascimento*" onfocus="(this.type='date')">
+                    <div class="where">
+                        <input type="number" class="input" name="cep" id="cep" placeholder="Cep*" />
+                        <div class="btn">
+                            <button onclick="search()"> Buscar </button>
+                        </div>
+                    </div>
+                    <div class="where">
+                        <input type="number" class="input" name="number" placeholder="Numero*" />
+                    </div>
+                    <div class="where">
+                        <input type="text" class="input" name="complement" placeholder="Complemento*" />
+                    </div>
+                    <div class="radiogroup">
+                        <input type="radio" name="gender" value="male"> <label> Masculino </label> <br>
+                        <input type="radio" name="gender" value="female"> <label> Feminino </label> <br>
+                    </div>
+                </div>
+                <div class="response" id="response"> </div>
+                <div class="action">
+                    <button onclick="register()"> Registrar </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./jquery.min.js"></script>
+    <script type="text/javascript" src="./register.js"></script>
+
+</body>
+
+</html>

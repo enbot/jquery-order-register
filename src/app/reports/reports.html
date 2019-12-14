@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="./reports.css">
+    <link rel="stylesheet" href="./shared.css">
+    <title> Relatórios </title>
+</head>
+
+<body>
+
+    <div class="cont">
+
+        <nav class="menu">
+            <div class="logo__menu"> WEB </div>
+            <a class="option__menu" href="./products.html"> Produtos </a>
+            <a class="option__menu is-selected"> Relatórios </a>
+            <a class="option__menu" href="./login.html"> sair </a>
+        </nav>
+
+        <div class="tablecontainer">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Usuário </th>
+                        <th> Data da solicitação </th>
+                        <th> Produto </th>
+                        <th> Quantidade </th>
+                        <th> Valor total </th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"> </tbody>
+            </table>
+
+            <div class="total">
+                <div id="total"> Total: 0,00 R$</div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./jquery.min.js"></script>
+    <script type="text/javascript" src="./reports.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+svg {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    overflow: visible;
+}
+
+.svg-icon {
+    cursor: pointer;
+
+    & path {
+        stroke: #6ED3CF;
+        fill: none;
+        stroke-width: 1;
+    }
+}
+
+input, button {
+    outline: none;
+    border: none;
+}
+
+.cont {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #ffc7e8;
+    overflow: auto;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .login {
+        box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+        overflow: hidden;
+        position: relative;
+        width: 350px;
+        height: 500px;
+        background: white;
+        border-radius: 4px;
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-transform: uppercase;
+            font-size: 50px;
+            background: #6ED3CF;
+            border-radius: 50%;
+            margin: 10px auto;
+            width: 200px;
+            height: 200px;
+            clip-path: circle(120px at 50% 50%);
+        }
+
+        .form {
+            padding: 0 10px;
+            width: 100%;
+            text-align: center;
+
+            .row {
+                position: relative;
+                height: 50px;
+                margin-top: 10px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+                .input {
+                    padding-left: 40px;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    background: #fafafa;
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                    font-size: 15px;
+                    color: #161616;
+                }
+            }
+        }
+    }
+}
+
+.icon {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+
+    &.name path {
+        stroke-dasharray: 73.50196075439453;
+        stroke-dashoffset: 73.50196075439453;
+        animation: animatePath 2s 0.5s forwards;
+    }
+    &.pass path {
+        stroke-dasharray: 92.10662841796875;
+        stroke-dashoffset: 92.10662841796875;
+        animation: animatePath 2s 0.5s forwards;
+    }
+}
+
+.submit {
+    font-size: 16px;
+    position: relative;
+    width: 100%;
+    height: 45px;
+    margin: 10px 0 4px 0;
+    color: #ffffff;
+    background: #6ED3CF;
+    border-radius: 35px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: width 0.3s 0.15s, font-size 0.1s 0.15s;
+    font-weight: 500;
+
+    &.cleanall {
+        color: #6ED3CF; 
+        background: rgba(110, 211, 207, 0.3);
+    }
+}
+
+.signup {
+    font-size: 12px;
+    color: #ABA8AE;
+
+    & a {
+        color: #6ED3CF;
+        font-weight: bolder;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
+
+@keyframes animRipple {
+    to {
+        transform: scale(3.5);
+        opacity: 0;
+    }
+}
+
+@keyframes animatePath {
+    to {
+        stroke-dashoffset: 0;
+    }
+}

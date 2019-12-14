@@ -1,0 +1,32 @@
+{
+  "name": "web-homework-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gulp run",
+    "build": "gulp build && npm pack dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enbot/web-homework-frontend.git"
+  },
+  "author": "Nathan Botelho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enbot/web-homework-frontend/issues"
+  },
+  "homepage": "https://github.com/enbot/web-homework-frontend#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "fs": "0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-terser": "^1.2.0"
+  }
+}

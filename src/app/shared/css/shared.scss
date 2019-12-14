@@ -1,0 +1,63 @@
+a{
+    text-decoration: none !important;
+}
+
+nav.menu{
+    margin: 20px;
+    background: white;
+    height: 50px;
+    border-radius: 8px;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    user-select: none;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+}
+
+nav.menu .logo__menu{
+    width: 30px;
+    height: 30px;
+    background: #6ED3CF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bolder;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+nav.menu .logo__menu:hover{
+    background: #ffc7e8;
+    cursor: default;
+}
+
+nav.menu .option__menu{
+    background: white;
+    color: #777777;
+    padding: 0 10px;
+    font-weight: 300;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+}
+
+nav.menu .option__menu:hover{
+    background: #f7f7f7;
+    color: #ffc7e8;
+    cursor: pointer;
+}
+
+nav.menu .option__menu.is-selected{
+    color: #6ED3CF;
+    font-weight: bold;
+    background: #eeeeee;
+}
+
+nav.menu .option__menu.is-selected:hover{
+    color: #6ED3CF;
+    background: #e7e7e7;
+}

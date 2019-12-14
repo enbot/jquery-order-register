@@ -1,0 +1,87 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-size: 100%;
+    height: 100%;
+    background: #ffc7e8;
+}
+
+input, button {
+    outline: none;
+    border: none;
+}
+
+.cont {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.cont::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+.cont::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #ffffff; 
+    border-radius: 6px;
+}
+
+.cont::-webkit-scrollbar-thumb {
+    background: #ffffff; 
+    border-radius: 6px;
+}
+
+.cont::-webkit-scrollbar-thumb:hover {
+    background: #cccccc; 
+}
+
+.tablecontainer{
+    padding: 20px 0 10px 0;
+    margin: 0 20px 20px 20px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 13px;
+    color: #777777;
+}
+
+td, th{
+    padding: 10px 0;
+}
+
+tbody tr:nth-child(odd){
+    background: rgba(255, 199, 232, 0.2 );
+}
+
+thead tr th{
+    font-weight: 300;
+    color: #6ED3CF;
+}
+
+thead tr th, tbody tr td{
+    text-align: center;
+}
+
+.cont .total{
+    color: #777777;
+    padding: 0 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

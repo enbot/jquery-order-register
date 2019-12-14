@@ -1,0 +1,162 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-size: 62.5%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+input, button {
+    outline: none;
+    border: none;
+}
+
+.cont {
+    width: 100vw;
+    height: 100vh;
+    background: #ffc7e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register {
+    width: 70vw;
+    height: 80vh;
+    background: white;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+    display: grid;
+    grid-template-columns: 25fr 75fr;
+    grid-gap: 20px;
+    position: relative;
+}
+
+.register .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register .main .input{
+    width: 80%;
+    height: 30px;
+    background: #fafafa;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-bottom: solid 1px #eeeeee;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+.register .personal .form{
+    padding: 0 20px;
+}
+
+.register .personal h3{
+    font-size: 21px;
+    padding-top: 20px;
+    color: #6ED3CF;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.register .personal .where{
+    display: grid;
+    grid-template-columns: 75fr 25fr;
+}
+
+.register .personal .where .btn{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register .personal .where button{
+    padding: 5px 10px;
+    background: #6ED3CF;
+    border-radius: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+.register .personal .radiogroup{
+    margin-top: 10px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    color: #777777;
+}
+
+.register .personal .radiogroup > *:not(:first-child){
+    margin-left: 8px;
+}
+
+.register .personal .input{
+    width: 100%;
+    height: 30px;
+    background: #fafafa;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-bottom: solid 1px #eeeeee;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+.register .personal .response{
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.register .personal .response .adress{
+    color: #6ED3CF;
+}
+
+.register .personal .response .res{
+    color: #777777;
+    padding-left: 20px;
+}
+
+.register .personal .action{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px 10px 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.register .personal .action button{
+    padding: 10px 30px;
+    background: #6ED3CF;
+    border-radius: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    background: #6ED3CF;
+    border-radius: 50%;
+    margin: 10px 25px;
+    width: 250px;
+    height: 250px;
+    clip-path: circle(120px at 50% 50%);
+}
