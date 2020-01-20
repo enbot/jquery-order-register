@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/enbot/web-homework-frontend.git"
+    "url": "git+https://github.com/notelho/web-homework-frontend.git"
   },
   "author": "Nathan Botelho",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/enbot/web-homework-frontend/issues"
+    "url": "https://github.com/notelho/web-homework-frontend/issues"
   },
-  "homepage": "https://github.com/enbot/web-homework-frontend#readme",
+  "homepage": "https://github.com/notelho/web-homework-frontend#readme",
   "dependencies": {
     "browser-sync": "^2.26.7",
     "fs": "0.0.1-security",
